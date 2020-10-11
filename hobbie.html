@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOBBIES | Jaskirat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/utilities.css">
+
+
+</head>
+
+<body>
+
+
+
+    <header>
+      <div class="container">
+         <nav >
+            <div class="left">
+                      <div>
+                          <img class="logo" src="images/logo.jpg" alt="logo" >
+                      </div>
+                      <div class="links">
+                          <a class="navMenu" href="index.html">  HOME</a>
+                          <a class="navMenu" href="about.html" >  ABOUT</a>
+                          <a class="navMenu" href="hobbie.html">  HOBBIES</a>
+                          <a class="navMenu" href="blogs.html" >BLOGS</a>
+                          <a class="navMenu" href="contact.html">CONTACTS</a>
+                      </div>
+            </div>
+         </nav>
+     </div>
+    </header>
+
+
+
+<main class="hobbies">
+
+    <div>
+        <div class="hobbiesText"> 
+           <h1><span>MY </span>Hobbies</h1>
+           <h3>Highly Passionate of Photography and Photoshop</h3>   
+           <h4>Here are some of my Personal Photos, Framed and Edited By me.</h4>
+        </div>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="images/skyseeing1.jpeg" alt="personalPhoto1" style="width: 100%;height: 100%;">
+              <div class="text">The Sky is Limit ! </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="images/edit3.jpg" alt="personalPhoto2" style="width:100%">
+              <div class="text">The Glowing King</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="images/personal1-min.jpg" alt="personalPhoto3" style="width:100%">
+              <div class="text">Attitude is Necessary</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="images/edit1.jpg" alt="personalPhoto4" style="width:100%">
+                <div class="text">The Night is Young</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="images/edit2.jpg" alt="personalPhoto5" style="width:100%">
+                <div class="text">Self-Satisfaction Missing!</div>
+              </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span> 
+            </div>
+    </div>
+    <div class="hide"><h1>Thank you for your Visit</h1></div>
+</main>
+
+
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+</script>
+
+
+
+
+<footer>
+    <div>
+        <img class="signature" src="images/signature.jpg" alt="signature" style=" width:360px; height:150px; ">
+    </div>
+
+    <div class="socialIcons">
+    <a href="https://www.instagram.com/one.jaskirat" class="fa fa-instagram" style="height: 25px; width: 25px;"></a>
+    <a href="https://www.linkedin.com/in/jaskirat-singh-a48b1a190" class="fa fa-linkedin" style="height: 25px; width: 25px;"></a>
+    <a href="https://www.facebook.com/profile.php?id=100007967561103" class="fa fa-facebook" style="height: 25px; width: 25px;"></a>
+    <a href="https://twitter.com/jaskirat893" class="fa fa-twitter" style="height: 25px; width: 25px;"></a>
+    <a href="https://github.com/OneJaskirat" class="fa fa-github" style="height: 25px; width: 25px;"></a>
+    </div>
+
+    <div class="email">
+        E-mail: jaskirat893@gmail.com
+    </div>
+   <div class="copyright">
+    Jaskirat Singh © 2020        
+   </div>
+</footer>
+
+
+
+</body>
+</html>
